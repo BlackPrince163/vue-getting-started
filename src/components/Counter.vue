@@ -8,9 +8,15 @@
 <script>
 export default {
     name: "Counter",
+    props: {
+        initialValue: {
+            type: Number,
+            default: 0
+        }
+    },
     data() {
         return {
-            count: 0
+            count: this.initialValue
         };
     },
     methods: {

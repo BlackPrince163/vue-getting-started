@@ -3,7 +3,7 @@
     <a href="http://yandex.ru">Yandex</a>
     <br>
     <p><span>Счетчик: <b>{{ count }}</b></span></p>
-    <Counter @updateCount="updateCountHandler" />
+    <Counter  @updateCount="updateCountHandler" />
 </template>
 
 <script>
@@ -13,7 +13,7 @@
         components: {Counter},
         data() {
             return {
-                count: 0
+                count: 5
             };
         },
         methods: {
