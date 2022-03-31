@@ -3,8 +3,8 @@
   <a href="http://yandex.ru">Yandex</a>
   <br>
   <p><span>Счетчик: <b>{{ count }}</b></span></p>
-  <input type="number" placeholder="Счетчик">
-  <button>Увеличить счетчик</button>
+  <input type="number" placeholder="Счетчик" v-model="count">
+  <button @click="clickHandler">Увеличить счетчик</button>
 </template>
 
 <script>
@@ -13,6 +13,11 @@
       return {
         count: 0
       };
+    },
+    methods: {
+      clickHandler() {
+        this.count++;
+      }
     }
   };
 </script>
