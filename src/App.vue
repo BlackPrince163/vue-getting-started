@@ -3,7 +3,7 @@
     <a href="http://yandex.ru">Yandex</a>
     <br>
     <p><span>Счетчик: <b>{{ count }}</b></span></p>
-    <Counter  @updateCount="updateCountHandler" />
+    <Counter :initial-value="count" @updateCount="updateCountHandler" />
 </template>
 
 <script>
