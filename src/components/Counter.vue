@@ -17,6 +17,11 @@ export default {
         clickHandler() {
             this.count++;
         }
+    },
+    watch: {
+        count(newValue) {
+            this.$emit("updateCount", newValue);
+        }
     }
 }
 </script>
